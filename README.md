@@ -8,7 +8,7 @@ python codes and data to check validity of Kayano-Nishiura's transmission model 
 
 are python codes to create "dummy" HER-SYS data files to drive the R-code provided by Kayano-Nishiura.
 
-hersys_data.csv, hersys_data_fdh.csv and hersys_data_fsh.csv are the data files created by the above codes. The file should be renamed to "hersys_data.csv" to run the R-code.
+hersys_data.csv, hersys_data_fdh.csv and hersys_data_fsh.csv are the data files created by the above codes. The file should be renamed to "File2.Hersys_infection.csv" to run the R-code.
 
 ## Kayano-Nishiura's R-code
 https://zenodo.org/records/15244462 (created on April 19, 2025)
