@@ -1,7 +1,7 @@
 # transmit
 python codes and data to check validity of Kayano-Nishiura's transmission model for COVID-19
 
-## pyton code
+## python code
 1) hersys_curve_gen.py
 2) hersys_curve_gen_fdh.py
 3) hersys_curve_gen_fsh.py
