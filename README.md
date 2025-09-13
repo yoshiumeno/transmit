@@ -1,17 +1,28 @@
 # transmit
-python codes and data to check validity of Kayano-Nishiura's transmission model for COVID-19
+python codes and data to check validity of Kayano-Nishiura's transmission model for COVID-19  
 
-## python code
+As the R-code of Kayano-Nishiura's transmission model in Sci. Rep. 2023 was posted on a Zenodo site (see below),
+a data file necessary for running the code was not disclosed, namely "File2.Hersys_infection.csv", makeing it
+difficult for anyone to follow their calculations.
+Here we provide codes and files to create the missing data file so that the R-code can be run to examine their
+calculations.
+
+## python codes
 1) hersys_curve_gen.py
 2) hersys_curve_gen_fdh.py
 3) hersys_curve_gen_fsh.py
 
-are python codes to create "dummy" HER-SYS data files to drive the R-code provided by Kayano-Nishiura.
+are python codes to create "dummy" HER-SYS data files to drive the R-code provided by Kayano-Nishiura.  
+"hersys_curve_gen.py" is to create a data file mimicking the original HER-SYS data (actual development of
+the number of infection cases). "hersys_curve_gen_fdh.py" and "hersys_curve_gen_fsh.py" are to create
+data files of 'fictitious' curves of infection cases (double-hump and single-hump shapes, respectively).
 
 hersys_data.csv, hersys_data_fdh.csv and hersys_data_fsh.csv are the data files created by the above codes.  
 The first column shows the date number starting on 2021/02/17 until 2021/11/30  
 (i.e., "1" means 2021/02/17, "2" means 2021/02/18, "3" means 2021/02/19, etc.).  
 The 2nd-11th colums show infection numbers of respective age brackets.
+
+## How to make "File2"
 
 From these data files, "File2.Hersys_infection.csv" (necessary to run the R-code) can be created as follows:
 1. The first line should read: Infection	a0009	a1019	a2029	a3039	a4049	a5059	a6069	a7079	a8089	a90	cases
@@ -21,7 +32,7 @@ From these data files, "File2.Hersys_infection.csv" (necessary to run the R-code
 4. For 2021/2/17 to 2021/11/30, paste the data of hersys_data*.csv to the 2nd-11th columns.
 5. The last (12th) column is the sum of 2th-11th columns.
 
-See the example "File2.Hersys_infection.csv" created based on "hersys_data.csv".
+See the example "File2.Hersys_infection.csv" provided here, which was created based on "hersys_data.csv", to follow the above procedures.
 
 ## Kayano-Nishiura's R-code
 https://zenodo.org/records/15244462 (created on April 19, 2025)
