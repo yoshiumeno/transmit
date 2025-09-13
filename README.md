@@ -1,5 +1,5 @@
 # transmit
-python codes and data to check validity of Kayano-Nishiura's transmission model for COVID-19  
+Python codes and data to check validity of Kayano-Nishiura's transmission model for COVID-19  
 
 As the R-code of Kayano-Nishiura's transmission model in Sci. Rep. 2023 was posted on a Zenodo site (see below),
 a data file necessary for running the code was not disclosed, namely "File2.Hersys_infection.csv", makeing it
@@ -7,12 +7,12 @@ difficult for anyone to follow their calculations.
 Here we provide codes and files to create the missing data file so that the R-code can be run to examine their
 calculations.
 
-## python codes
+## Python codes
 1) hersys_curve_gen.py
 2) hersys_curve_gen_fdh.py
 3) hersys_curve_gen_fsh.py
 
-are python codes to create "dummy" HER-SYS data files to drive the R-code provided by Kayano-Nishiura.  
+are Python codes to create "dummy" HER-SYS data files to drive the R-code provided by Kayano-Nishiura.  
 "hersys_curve_gen.py" is to create a data file mimicking the original HER-SYS data (actual development of
 the number of infection cases). "hersys_curve_gen_fdh.py" and "hersys_curve_gen_fsh.py" are to create
 data files of 'fictitious' curves of infection cases (double-hump and single-hump shapes, respectively).
