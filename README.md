@@ -16,7 +16,8 @@ are Python codes to create "dummy" HER-SYS data files to drive the R-code provid
 
 "hersys_curve_gen.py" is to create a data file mimicking the original HER-SYS data (actual development of
 the number of infection cases).
-The code uses discrete data points extracted from the infection curve reported in the Kayano-Nishiura paper and applies spline interpolation.  
+The code uses discrete data points extracted from the infection curve reported in the Kayano-Nishiura paper and applies spline interpolation.
+(NB: the number of infection numbers in each age group was assumed to be one-tenth of the total number.)  
 "hersys_curve_gen_fdh.py" and "hersys_curve_gen_fsh.py" are to create
 data files of 'fictitious' curves of infection cases (double-hump and single-hump shapes, respectively).
 
